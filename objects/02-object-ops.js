@@ -81,14 +81,42 @@ for (let restaurant of restaurants) {
 		- Practice nesting for loops and for...in loops.
 		- Loop back through, this time printing a template literal that uses the values for each object.
 */
+let gardens = {
+	name: "Botanical Gardens",
+	location: "St.Peters",
+	adultTicketPrice: "$20",
+	childTicketPrice: "$10",
+	famousfeatures: ["Waterfall", "Butterflies", "Flowers"]
+	};
+	
+let museums = {
+	name: "Missouri History Museum",
+	location: "St.louis",
+	adultTicketPrice: "$15",
+	childTicketPrice: "$8",
+	famousfeatures: ["World War 2 Exhibit", "Civil Rights Gallery", "Interactive History Lab"]
+};
+let attractions = [gardens, museums];
 
-/*
+for(let attraction) {
+	for(let key in attraction)
+
+}
+	
+	
+	
+	
+	
+	
+	/*
 	Create two objects representing different local attractions (zoo, gardens, museums, etc), each with the following properties: name, location, adultTicketPrice, childTicketPrice, and famousFeatures (array of three strings). Be creative! Place the objects in an array.
 */
 
-// TODO: create objects and put them in an array
 
+
+// TODO: create objects and put them in an array
 /*
+
 	Loop through the array, then within that for loop, use a for...in loop to grab values from each key and print them to the console. If you come across a key storing an array, print each element in the array instead of the array itself. Remember that you need a new index variable with each nested FOR loop (i, j are common).
 
 	NOTE: This is a tough one to think through when you're new at this. If you get completely stuck, reference the solution that accompanies this starter code. But make an effort to figure it out yourself first!
